@@ -1,0 +1,47 @@
+a = 'АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ'
+smeshenie = int(input('Шаг шифровки: '))
+message = input("Сообщение для дешифровки: ").upper()
+shifr = ''
+for i in message:
+    mesto = a.find(i)
+    new_mesto = mesto + smeshenie
+    if i in a:
+        shifr += a[new_mesto]
+print (shifr)
+message1 =shifr
+deshifr = ''
+for i in message1:
+        mesto = a.find(i)
+        new_mesto = mesto - smeshenie
+        if i in a:
+            deshifr += a[new_mesto]
+print (deshifr)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
